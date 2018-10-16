@@ -1,6 +1,5 @@
 class StaticPagesController < ApplicationController
   def home
-    @q = User.ransack(params[:q])
-    # @people = @q.result(distinct: true)
+    @q = User.ransack params[:q]
   end
 end
